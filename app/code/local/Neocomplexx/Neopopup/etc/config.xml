@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!--
+ * Neocomplexx PopUp
+-->
+<config>
+    <modules>
+        <Neocomplexx_Neopopup>
+            <version>0.0.1</version>
+        </Neocomplexx_Neopopup>
+    </modules>
+    <global>
+        <helpers>
+            <neopopup>
+                <class>Neocomplexx_Neopopup_Helper</class>
+            </neopopup>
+        </helpers>
+        <models>
+             <neopopup>
+                <class>Neocomplexx_Neopopup_Model</class>
+             </neopopup>
+        </models>
+    </global>
+    <frontend>
+        <translate>
+            <modules>
+                <Neocomplexx_Neopopup>
+                    <files>
+                        <default>Neocomplexx_Neopopup.csv</default>
+                    </files>
+                </Neocomplexx_Neopopup>
+            </modules>
+        </translate>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <neopopup_modal>
+                        <class>neopopup/observer</class>
+                        <method>showModal</method>
+                    </neopopup_modal>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+        <layout>
+            <updates>
+                <neopopup>
+                    <file>neocomplexx_neopopup.xml</file>
+                </neopopup>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+            <adminhtml>
+				<args>
+					<modules>
+						<neopopup before="Mage_Adminhtml">Neocomplexx_Neopopup_Adminhtml</neopopup>
+					</modules>
+				</args>
+			</adminhtml>
+        </routers>
+    </admin>
+    <adminhtml>
+        <translate>
+            <modules>
+                <Neocomplexx_Neopopup>
+                    <files>
+                        <sintax>Neocomplexx_Neopopup.csv</sintax>
+                    </files>
+                </Neocomplexx_Neopopup>
+            </modules>
+        </translate>
+        <layout>
+            <updates>
+                <neopopup>
+                    <file>neocomplexx_neopopup.xml</file>
+                </neopopup>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <default>
+        <neocomplexx_neopopup>
+            <general>                
+                <active>1</active>
+                <debug>0</debug>
+                <mode>no_param</mode>
+            </general>
+            <param>
+                <name><![CDATA[news]]></name>
+                <value><![CDATA[1]]></value>
+            </param>
+        </neocomplexx_neopopup>
+    </default>
+
+
+
+
+
+</config>

@@ -1,0 +1,12 @@
+app/code/local/Neocomplexx/Neopopup/Helper/Data.php app/code/local/Neocomplexx/Neopopup/Helper/Data.php
+app/code/local/Neocomplexx/Neopopup/Model/Observer.php app/code/local/Neocomplexx/Neopopup/Model/Observer.php
+app/code/local/Neocomplexx/Neopopup/Model/System/Source/Mode.php app/code/local/Neocomplexx/Neopopup/Model/System/Source/Mode.php
+app/code/local/Neocomplexx/Neopopup/etc/adminhtml.xml app/code/local/Neocomplexx/Neopopup/etc/adminhtml.xml
+app/code/local/Neocomplexx/Neopopup/etc/config.xml app/code/local/Neocomplexx/Neopopup/etc/config.xml
+app/code/local/Neocomplexx/Neopopup/etc/system.xml app/code/local/Neocomplexx/Neopopup/etc/system.xml
+app/design/frontend/rwd/default/layout/neocomplexx_neopopup.xml app/design/frontend/rwd/default/layout/neocomplexx_neopopup.xml
+app/design/frontend/rwd/default/template/neocomplexx/neopopup/newsletter.phtml app/design/frontend/rwd/default/template/neocomplexx/neopopup/newsletter.phtml
+app/etc/modules/Neocomplexx_Neopopup.xml app/etc/modules/Neocomplexx_Neopopup.xml
+js/bootstrap.min.js js/bootstrap.min.js
+js/neocomplexx/neopopup/neopopup.js js/neocomplexx/neopopup/neopopup.js
+skin/frontend/rwd/default/css/bootstrap.min.css skin/frontend/rwd/default/css/bootstrap.min.css

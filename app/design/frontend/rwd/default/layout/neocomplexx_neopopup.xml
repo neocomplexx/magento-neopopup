@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Neocomplexx PopUp
+ */
+-->
+
+<layout version="0.1.0">
+
+    <neopopup_show_modal>
+        <reference name="before_body_end">
+            <block type="newsletter/subscribe" name="neopopup.newsletter.modal" template="neocomplexx/neopopup/newsletter.phtml" />
+            <block type="page/html_head" name="head" as="head">
+                <action method="addItem"><type>skin_css</type><name>css/bootstrap.min.css</name><params/></action>
+                <action method="addJs"><script>bootstrap.min.js</script></action>
+                <action method="addJs"><script>neocomplexx/neopopup/neopopup.js</script></action>
+            </block>
+        </reference>
+    </neopopup_show_modal>
+
+</layout>
