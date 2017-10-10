@@ -10,4 +10,4 @@ app/etc/modules/Neocomplexx_Neopopup.xml app/etc/modules/Neocomplexx_Neopopup.xm
 js/bootstrap.min.js js/bootstrap.min.js
 js/neocomplexx/neopopup/neopopup.js js/neocomplexx/neopopup/neopopup.js
 skin/frontend/rwd/default/css/bootstrap.min.css skin/frontend/rwd/default/css/bootstrap.min.css
-skin/frontend/base/default/css/bootstrap.min.css skin/frontend/base/default/css/neopopup.min.css
+skin/frontend/base/default/css/neopopup.min.css skin/frontend/base/default/css/neopopup.min.css
