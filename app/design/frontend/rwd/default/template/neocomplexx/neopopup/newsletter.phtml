@@ -10,65 +10,23 @@
 
 <?php if($block): ?>
 
-	<style>
-		.neocomplexx_modal_newsletter .modal-body img {
-			width: 100%;
-		}
-
-		.neocomplexx_modal_newsletter .modal-body {
-			padding: 0;
-		}
-
-		.neocomplexx_modal_newsletter .modal-content form {
-			position: absolute;
-			width: 100%;
-			bottom: 80px;
-			left: 100px;
-		}
-
-		.neocomplexx_modal_newsletter .modal-content .subscribe-form-content button {
-			margin-left: 10px;
-		}
-		.neocomplexx_modal_newsletter .modal-content .validation-advice {
-			position: absolute;
-		}
-		.neocomplexx_modal_newsletter .close {
-			position: absolute;
-			right: 20px;
-			text-shadow: 0 0 3px #fbfbfb;
-			color: red;
-			font-size: 36px;
-			background: transparent;
-			border: none;
-		}
-
-		.neocomplexx_modal_newsletter .button {
-			height: 35px;
-			margin-bottom: 3px;
-		}
-
-		.neocomplexx_modal_newsletter input {
-			height: 35px;
-			width: 300px;
-		}
-	</style>
 	<div id="neocomplexx_modal_newsletter" class="modal neocomplexx_modal_newsletter">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-		<div class="modal-body">
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="headernewsletter-validate-detail">
-				<div class="subscribe-form-content">
-					<input type="text" name="email" id="newsletter" title="<?php echo $this->__('Enter your email') ?>" class="input-text required-entry validate-email" value="<?php echo $this->__('Enter your email') ?>" onfocus="if(this.value == '' || this.value == '<?php echo $this->__('Enter your email'); ?>'){ this.value = '';}" onblur="if(this.value == ''){ this.value = '<?php echo $this->__('Enter your email'); ?>';}" />
-					<button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
-				</div>
-			</form>
-			<?=$block?>
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<form action="<?php echo $this->getFormActionUrl() ?>" method="post" id="headernewsletter-validate-detail">
+					<div class="subscribe-form-content">
+						<input type="text" name="email" id="newsletter" title="<?php echo $this->__('Enter your email') ?>" class="input-text required-entry validate-email" value="<?php echo $this->__('Enter your email') ?>" onfocus="if(this.value == '' || this.value == '<?php echo $this->__('Enter your email'); ?>'){ this.value = '';}" onblur="if(this.value == ''){ this.value = '<?php echo $this->__('Enter your email'); ?>';}" />
+						<button type="submit" title="<?php echo $this->__('Subscribe') ?>" class="button"><span><span><?php echo $this->__('Subscribe') ?></span></span></button>
+					</div>
+				</form>
+				<?=$block?>
+			</div>
+			</div>
 		</div>
-		</div>
-	</div>
 	</div>
 
 	<script type="text/javascript">
