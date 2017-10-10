@@ -23,8 +23,8 @@
 .neocomplexx_modal_newsletter .close {
     position: absolute;
     right: 20px;
-    text-shadow: 0 0 3px #fbfbfb;
-    color: red;
+    text-shadow: 0 0 3px #7f7f7f;
+    color: #fff;
     font-size: 36px;
     background: transparent;
     border: none;
