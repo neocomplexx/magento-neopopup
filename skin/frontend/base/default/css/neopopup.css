@@ -18,6 +18,8 @@
 }
 .neocomplexx_modal_newsletter .modal-content .validation-advice {
     position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 .neocomplexx_modal_newsletter .close {
